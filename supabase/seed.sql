@@ -16,13 +16,13 @@ insert into public.schools (id, name, logo_url) values
   ('10000000-0000-0000-0000-000000000004', 'Duke University', null);
 
 -- Profiles
-insert into public.profiles (id, full_name, tagline, bio, location, avatar_url) values
-  ('20000000-0000-0000-0000-000000000001', 'Cade Rutkoske', 'Coxswain • Georgetown Crew • Class of 2030', 'International Business and Politics student. Coxswain for Georgetown Crew, previously captained Varsity Crew at Phillips Academy.', 'Washington, D.C.', null),
-  ('20000000-0000-0000-0000-000000000002', 'Felix Marino', 'Rower • Georgetown Crew', 'Computer science major who rows in the 2-seat. Always looking for a good boathouse playlist recommendation.', 'Washington, D.C.', null),
-  ('20000000-0000-0000-0000-000000000003', 'Mia Reyes', 'Guard • Phillips Academy Basketball', 'Point guard, senior year. Committed to playing D1 next fall.', 'Andover, MA', null),
-  ('20000000-0000-0000-0000-000000000004', 'Abi Torres', 'Student • Georgetown SFS', 'Studying international politics, interning in research this summer.', 'Washington, D.C.', null),
-  ('20000000-0000-0000-0000-000000000005', 'Jordan Park', 'Coxswain • Michigan Rowing', 'Sport management major. Coxed the varsity 8+ to a conference title last spring.', 'Ann Arbor, MI', null),
-  ('20000000-0000-0000-0000-000000000006', 'Sam Kim', 'Forward • Duke Basketball', 'Economics major, student assistant coach on the side.', 'Durham, NC', null);
+insert into public.profiles (id, full_name, tagline, bio, location, avatar_url, gender, show_gender) values
+  ('20000000-0000-0000-0000-000000000001', 'Cade Rutkoske', 'Coxswain • Georgetown Crew • Class of 2030', 'International Business and Politics student. Coxswain for Georgetown Crew, previously captained Varsity Crew at Phillips Academy.', 'Washington, D.C.', null, 'male', true),
+  ('20000000-0000-0000-0000-000000000002', 'Felix Marino', 'Rower • Georgetown Crew', 'Computer science major who rows in the 2-seat. Always looking for a good boathouse playlist recommendation.', 'Washington, D.C.', null, 'male', true),
+  ('20000000-0000-0000-0000-000000000003', 'Mia Reyes', 'Guard • Phillips Academy Basketball', 'Point guard, senior year. Committed to playing D1 next fall.', 'Andover, MA', null, 'female', true),
+  ('20000000-0000-0000-0000-000000000004', 'Abi Torres', 'Student • Georgetown SFS', 'Studying international politics, interning in research this summer.', 'Washington, D.C.', null, 'female', true),
+  ('20000000-0000-0000-0000-000000000005', 'Jordan Park', 'Coxswain • Michigan Rowing', 'Sport management major. Coxed the varsity 8+ to a conference title last spring.', 'Ann Arbor, MI', null, 'male', true),
+  ('20000000-0000-0000-0000-000000000006', 'Sam Kim', 'Forward • Duke Basketball', 'Economics major, student assistant coach on the side.', 'Durham, NC', null, 'male', true);
 
 -- Teams
 insert into public.teams (id, school_id, name, sport) values

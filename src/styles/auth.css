@@ -1,0 +1,130 @@
+/* Shared layout for Login and every Sign Up step - same centered box,
+   pill-shaped inputs, and buttons, so a style change only needs to happen
+   once instead of once per page. */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transform: translateY(-10vh);
+}
+
+.auth-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.auth-title .brand-title {
+  font-family: 'Bangers', cursive;
+  font-size: 35px;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-input,
+.auth-select {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.auth-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.auth-select option {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.auth-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  padding-left: 4px;
+}
+
+.auth-error {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  padding-left: 4px;
+}
+
+.auth-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.auth-btn-primary,
+.auth-btn-secondary {
+  flex: 1;
+  padding: 14px 0;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.auth-btn-primary {
+  border: none;
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+
+.auth-btn-secondary {
+  border: 1px solid var(--color-text);
+  background: transparent;
+  color: var(--color-text);
+}
+
+.auth-link {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+.auth-secondary-row {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.auth-secondary-row a {
+  color: var(--color-text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-secondary-row a:hover {
+  text-decoration: underline;
+}
